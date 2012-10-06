@@ -1,6 +1,6 @@
 
 PING = true
-TRACEROUTE = false
+TRACEROUTE = true
 
 PLACES = %w{
   www.bezdrat.net

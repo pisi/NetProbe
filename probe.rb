@@ -19,7 +19,7 @@ FOLDER = 'results'
 system "mkdir #{ FOLDER }/#{ SUBFOLDER }"
 
 def ping url
-  system "ping -c 5 #{ url } > #{ FOLDER }/#{ SUBFOLDER }/#{ url }-ping.txt"
+  system "ping -c 50 #{ url } > #{ FOLDER }/#{ SUBFOLDER }/#{ url }-ping.txt"
 end
 def traceroute url
   system "traceroute -e -S #{ url } > #{ FOLDER }/#{ SUBFOLDER }/#{ url }-traceroute.txt"

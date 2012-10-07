@@ -2,7 +2,7 @@
 PING = true
 TRACEROUTE = true
 
-PLACES = %w{
+HOSTS = %w{
   www.bezdrat.net
   gmail.com
   skype.com
@@ -29,10 +29,10 @@ def zip
 end
 
 puts "Probing... (takes few minutes)"
-PLACES.each do |place|
-  puts " @ #{ place }"
-  ping place if PING
-  traceroute place if TRACEROUTE
+HOSTS.each do |host|
+  puts " @ #{ host }"
+  ping host if PING
+  traceroute host if TRACEROUTE
 end
 
 puts "Packing..."

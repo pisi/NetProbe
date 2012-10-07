@@ -10,7 +10,7 @@ Network Fitness Probe
 In an attempt to help the provider guys diagnose the occasional losses
 of connectivity and tune up the connection, I've scribbled this little
 [Ruby][ruby] probe, which I run on my OSX stack to automate this process
-for me. It takes a list of domains, runs network diagnostics command(s)
+for me. It takes a list of hosts, runs network diagnostics command(s)
 for each of them and dumps outputs into a timestamped subfolder
 of [`results/`][results], which is then ZIPped up for better transport.
 

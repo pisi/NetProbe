@@ -16,16 +16,16 @@ TAG = ARGV[0]
 SUBFOLDER = "#{ Time.now.strftime "%Y-%m-%d-%H-%M" }#{ "-#{ TAG }" if TAG }"
 FOLDER = 'results'
 
-system "mkdir #{ FOLDER }/#{ SUBFOLDER }"
+`mkdir #{ FOLDER }/#{ SUBFOLDER }`
 
 def ping url
-  system "ping -c 50 #{ url } > #{ FOLDER }/#{ SUBFOLDER }/#{ url }-ping.txt"
+  `ping -a -c 50 #{ url } > #{ FOLDER }/#{ SUBFOLDER }/#{ url }-ping.txt`
 end
 def traceroute url
-  system "traceroute -e -S #{ url } > #{ FOLDER }/#{ SUBFOLDER }/#{ url }-traceroute.txt"
+  `traceroute -e -S #{ url } > #{ FOLDER }/#{ SUBFOLDER }/#{ url }-traceroute.txt`
 end
 def zip
-  system "cd #{ FOLDER }; zip #{ SUBFOLDER }.zip #{ SUBFOLDER }/*"
+  `cd #{ FOLDER }; zip #{ SUBFOLDER }.zip #{ SUBFOLDER }/*`
 end
 
 puts "Probing... (takes few minutes)"

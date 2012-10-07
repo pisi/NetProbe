@@ -2,8 +2,8 @@ Network Fitness Probe
 =====================
 
 > **There are no proper words to describe how much my current wireless
-> internet connection sucks.** Frankly, the situation is far from ideal
-> - the provider's antenna is 858 meters from mine and did I mention
+> internet connection sucks.** Frankly, the situation is far from ideal -
+> the provider's antenna is 858 meters from mine and did I mention
 > the huge leaf tree some 30 meters from mine directly in the line
 > of sight? Signal is good, but sometimes there are nearly 80% losses.
 
@@ -23,4 +23,4 @@ The results subfolder can also optionally be tagged with an argument.
 
 [ruby]:http://ruby-lang.org
 [pisi]:http://petr.vostrel.cz
-[results]:results
+[results]:NetProbe/tree/master/results
